@@ -1,0 +1,21 @@
+import styles from "@/styles/home.module.css";
+import GradientText from './GradientText';  // Corrected import path
+
+export default function Hero() {
+  return (
+    <section id="home" className={styles.container}>
+      <div className={styles.titleContainer}>
+        <h1 className="title">Illumine&#39; 2025</h1>
+        {/* Apply GradientText to the subtitle */}
+        <GradientText
+          colors={["#ffffff", "rgb(255, 204, 0)", "#ffffff", "rgb(255, 204, 0)", "#ffffff"]} // Updated gradient colors (white and yellow)
+          animationSpeed={3} // Animation speed in seconds
+          showBorder={false} // No border for the subtitle
+          className="subtitle" // Add a custom class for the subtitle styling
+        >
+          Innofashion Show 7
+        </GradientText>
+      </div>
+    </section>
+  );
+}
