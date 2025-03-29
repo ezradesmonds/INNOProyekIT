@@ -1,12 +1,12 @@
 import React from 'react';
-import './GradientText.css'; // Import the styles for the GradientText component
+import './GradientText.css'; 
 
 export default function GradientText({
   children,
   className = "",
-  colors = ["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"], // Default gradient colors
-  animationSpeed = 8, // Default animation speed in seconds
-  showBorder = false, // Show border overlay if true
+  colors = ["#40ffaa", "#4079ff", "#40ffaa", "#4079ff", "#40ffaa"], 
+  animationSpeed = 8, 
+  showBorder = false, 
 }) {
   const gradientStyle = {
     backgroundImage: `linear-gradient(to right, ${colors.join(", ")})`,

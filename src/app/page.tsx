@@ -41,7 +41,6 @@ export default function Home() {
 
       <Features />
 
-      {/* Timeline Section */}
       <section className="timeline fade-in">
         <div className="timeline-container fade-in">
           <span className="date fade-in">10 Maret 2025</span>
@@ -58,7 +57,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Button */}
       <div style={{ textAlign: "center", margin: "100px" }}>
         <CTAButton />
       </div>
